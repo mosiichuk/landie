@@ -21,7 +21,6 @@ a
     &:hover
         color: $blue-900
 
-
 h1
     font-size: 25px
     font-weight: $medium-text
@@ -44,7 +43,6 @@ h3
 .logo
     font-weight: $black-text
     font-size: 26px
-    line-height: 38px
     color: $blue-600
     pointer-events: none
 
@@ -94,10 +92,10 @@ h3
         position: absolute
         display: inline-block
         left: 50%
-        transform: translate(-50%, -40px)
+        transform: translate(-50%, -27px)
 
         +screen-up(lg)
-            transform: translate(-50%, -15%)
+            transform: translate(-50%, 0)
 
     & .nav-link
         padding: 0
@@ -216,7 +214,7 @@ h3
 .offer
     position: relative
     padding: 100px 0 60px
-    background: $blue-100
+    background: $blue-50
 
     +screen-up(sm)
         padding: 230px 0 170px
@@ -270,3 +268,24 @@ h3
 
 .shape-divider .shape-fill
     fill: #FFFFFF
+
+footer
+    position: relative
+    padding: 68px 0 32px
+    background: $blue-100
+
+    & .brand
+        margin: 0 0 20px
+        padding: 0 0 40px
+        border-bottom: 1px solid #CDD1D4
+
+    & .logo
+        position: absolute
+        left: 50%
+        transform: translate(-50%, -40px)
+
+        +screen-up(md)
+            transform: translate(-50%, 0)
+
+    & .social-media a:not(:last-child)
+        margin: 0 30px 0 0
