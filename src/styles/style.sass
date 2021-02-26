@@ -13,16 +13,181 @@ body
     font-size: 16px
     line-height: 26px
     color: $blue-400
+    position: relative
+
+a
+    color: $blue-400
+
+    &:hover
+        color: $blue-900
+
 
 h1
-    font-size: 50px
+    font-size: 25px
     font-weight: $medium-text
-    line-height: 66px
+    line-height: 130%
     letter-spacing: 1px
     color: $blue-900
+
+    +screen-up(sm)
+        font-size: 35px
+
+    +screen-up(md)
+        font-size: 50px
 
 h3
     font-weight: $medium-text
     font-size: 36px
-    line-height: 48px
+    line-height: 130%
     color: $blue-900
+
+.logo
+    font-weight: $black-text
+    font-size: 26px
+    line-height: 38px
+    color: $blue-600
+    pointer-events: none
+
+.button
+    display: block
+    font-weight: $medium-text
+    font-size: 12px
+    line-height: 150%
+    border-radius: 2px
+    padding: 5px 0
+    text-align: center
+
+    &--main
+        background-color: $blue-800
+        color: $white
+
+        &:hover
+            color: $white
+
+    &--white
+        border: 2px solid $blue-900
+        color: $blue-900
+
+    &--sm
+        width: 110px
+
+    &--md
+        width: 160px
+
+    &--lg
+        width: 190px
+        font-size: 16px
+        line-height: 160%
+
+.header
+    width: 100%
+    padding: 40px 0 0
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 20
+
+    +screen-up(lg)
+        padding: 20px 0 0
+
+    & .logo
+        position: absolute
+        display: inline-block
+        left: 50%
+        transform: translate(-50%, -40px)
+
+        +screen-up(lg)
+            transform: translate(-50%, -15%)
+
+    & .nav-link
+        padding: 0
+
+    & .nav-link:hover
+        font-weight: $regular-text
+
+.hero
+    position: relative
+    background: $blue-100
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    overflow: hidden
+
+    +screen-up(lg)
+        background: url("../img/hero-bg.svg") no-repeat bottom right
+
+    & .content
+        position: relative
+        z-index: 20
+
+    & .title
+        margin: 0 0 20px
+
+    & .info
+        margin: 0 0 30px
+
+        +screen-up(sm)
+            margin: 0 0 50px
+
+        +screen-up(md)
+            margin: 0 0 70px
+
+.gears,
+.designer
+    position: absolute
+
+.gears
+    right: 3%
+    top: 20vh
+    width: 11%
+    height: 7%
+
+.designer
+    right: 0
+    top: 40vh
+    transform: translateX(25%)
+    width: 40%
+    height: 27%
+
+#computer,
+#gear-lg,
+#gear-sm,
+#tools,
+#designer
+    position: absolute
+    z-index: 1
+
+#computer,
+#gear-lg,
+#gear-sm,
+#designer
+    display: none
+
+    +screen-up(lg)
+        display: block
+
+#tools
+    display: none
+
+    +screen-up(xl)
+        display: block
+
+#gear-sm
+    bottom: 0
+    right: 0
+    animation: spin-back 10s linear infinite
+
+#gear-lg
+    top: 0
+    left: 0
+    animation: spin 20s linear infinite
+
+#designer
+    left: 25%
+    top: 20%
+    animation: designer-movement 10s linear infinite
+
+#tools
+    right: 30%
+    top: 20vh

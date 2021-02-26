@@ -6,9 +6,74 @@
     <title>${require('../config/site.config.js').site_name}</title>
     <meta name="description" content="${require('../config/site.config.js').site_description}"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap"
+          rel="stylesheet">
 </head>
 <body>
+<header class="header" id="header">
+    <span class="logo">Landie</span>
 
+    <div class="container">
+        <nav>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-12 col-lg-4 col-xl-3">
+                    <div class="nav justify-content-between">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Contact</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-xl-2 d-none d-lg-block">
+                    <a href="#" class="button button--main button--md ms-auto">
+                        Buy now
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<section id="hero" class="hero">
+    <div class="gears">
+        <img src="./img/gear-sm.svg" alt="Gear small" id="gear-sm" class="img-fluid">
+        <img src="./img/gear-lg.svg" alt="Gear large" id="gear-lg" class="img-fluid">
+    </div>
+
+    <div class="designer">
+        <img src="./img/computer.svg" alt="Computer" id="computer" class="img-fluid">
+        <img src="./img/designer.svg" alt="Designer" id="designer" class="img-fluid">
+    </div>
+
+    <img src="./img/tools.svg" alt="Color pick tools" id="tools" class="img-fluid">
+
+    <div class="container">
+        <div class="row content">
+            <div class="col-12 col-lg-6 text-center text-lg-start">
+                <h1 class="title">
+                    Introduce Your Product Quickly & Effectively
+                </h1>
+
+                <p class="info">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                    eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                    montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem. Nulla
+                    consequat massa quis enim.
+                </p>
+
+                <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start">
+                    <a href="#" class="button button--main button--lg me-sm-3 mb-3 mb-sm-0">
+                        Purchase UI Kit
+                    </a>
+
+                    <a href="#" class="button button--white button--lg">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 </html>
