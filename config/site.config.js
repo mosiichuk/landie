@@ -10,7 +10,7 @@ const config = {
     site_name: 'Landie',
     site_description: 'Landie',
     viewport: 'width=device-width,initial-scale=1',
-    favicon: path.join(ROOT, './src/favicon/favicon.png'),
+    favicon: path.join(ROOT, './src/favicon/favicon.jpg'),
     dev_host: 'localhost',
     port: process.env.PORT || 8000,
     env: process.env.NODE_ENV,
