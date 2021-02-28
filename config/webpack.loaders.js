@@ -110,34 +110,10 @@ const images = {
     ]
 };
 
-const icons = {
-    test: /\.(gif|png|jpe?g|svg)$/,
-    include: [
-        path.resolve(__dirname, '../src/icons/')
-    ],
-    use: [
-        'file-loader?name=icons/[name].[hash].[ext]&esModule=false',
-        imageLoader
-    ]
-};
-
-const fonts = {
-    test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
-    exclude: [
-        /img/,
-        /icons/
-    ],
-    use: [{
-        loader: 'file-loader?name=fonts/[name].[hash].[ext]&esModule=false',
-    },],
-};
-
 module.exports = [
     html,
     js,
     css,
     sass,
     images,
-    icons,
-    fonts,
 ];
