@@ -27,9 +27,22 @@ const slideFromRightWithDelay = {
     delay: 600
 };
 
+const slideFromLeft = {
+    ...slideFromRight,
+    origin: 'left',
+};
+
+const slideFromLeftWithDelay = {
+    ...slideFromLeft,
+    delay: 600
+};
+
+
 export default function initAnimations() {
     const sr = ScrollReveal();
 
+    sr.reveal('.about .title', slideFromLeft);
+    sr.reveal('.about .description', slideFromLeftWithDelay);
     sr.reveal('.feature .title', slideFromRight);
     sr.reveal('.feature .description', slideFromRightWithDelay);
     sr.reveal('.hero .title', slideUp);

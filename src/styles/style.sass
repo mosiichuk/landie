@@ -25,6 +25,7 @@ body
     line-height: 26px
     color: $blue-400
     position: relative
+    overflow-x: hidden
 
 a
     color: $blue-400
@@ -142,6 +143,25 @@ h3
         +screen-up(md)
             margin: 0 0 70px
 
+    & .gears
+        right: 3%
+        top: 20vh
+        width: 10%
+        height: auto
+
+    & #designer
+        width: 40%
+        height: auto
+
+    & .designer
+        right: 0
+        top: 40vh
+        transform: translateX(25%)
+
+        & #designer
+            left: 25%
+            top: 20%
+
 .about
     padding: 50px 0
 
@@ -183,61 +203,6 @@ h3
 
 .svg-absolute
     position: absolute
-
-.svg-animate
-    &.gears
-        right: 3%
-        top: 20vh
-        width: 10%
-        height: auto
-
-        & path
-            transform-box: fill-box
-            transform-origin: center
-
-        & #gear-sm
-            animation: spin-back 10s linear infinite
-
-        & #gear-lg
-            animation: spin 18s linear infinite
-
-    &#designer
-        width: 40%
-        height: auto
-
-    &.designer
-        right: 0
-        top: 40vh
-        transform: translateX(25%)
-
-        & #designer
-            left: 25%
-            top: 20%
-            animation: designer-movement 10s linear infinite
-
-    &#features-1
-        overflow: visible
-
-        & .leaves
-
-            & #leaf-1, #leaf-2
-                transform-box: fill-box
-                transform-origin: bottom right
-                animation: leaf-left 4s linear infinite
-
-            & #leaf-3, #leaf-4
-                transform-box: fill-box
-                transform-origin: bottom left
-                animation: leaf-right 4s linear infinite
-
-
-        & .clouds
-
-            & path
-                transform-box: fill-box
-                transform-origin: center
-                animation: clouds 10s linear infinite
-
 
 .feature
     padding: 30px 0
@@ -338,7 +303,3 @@ footer
 
     & .social-media a:not(:last-child)
         margin: 0 30px 0 0
-
-
-.animation
-    animation: designer-movement 1s linear infinite
