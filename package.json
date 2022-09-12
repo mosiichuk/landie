@@ -10,7 +10,7 @@
         "@babel/plugin-proposal-class-properties": "^7.10.4",
         "@babel/preset-env": "^7.10.4",
         "@iconfu/svg-inject": "^1.2.3",
-        "autoprefixer": "^9.8.5",
+        "autoprefixer": "^10.4.9",
         "babel-eslint": "^10.1.0",
         "babel-loader": "^8.0.6",
         "bootstrap": "^5.0.0-beta2",
